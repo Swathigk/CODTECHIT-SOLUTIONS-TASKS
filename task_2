@@ -1,0 +1,25 @@
+int led1 = 13;
+int led2 = 12;
+int fan = 8;
+
+void setup()
+{
+  pinMode(led1, OUTPUT);
+  pinMode(led2, OUTPUT);
+  pinMode(fan, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(led1, HIGH);
+  delay(1000);
+  digitalWrite(led1, LOW);
+
+  digitalWrite(led2, HIGH);
+  delay(1000);
+  digitalWrite(led2, LOW);
+
+  digitalWrite(fan, HIGH);
+  delay(2000);
+  digitalWrite(fan, LOW);
+}
